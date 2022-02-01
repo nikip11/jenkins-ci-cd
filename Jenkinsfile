@@ -10,7 +10,7 @@ pipeline {
     stages {
         stage('Build Docker Image') {
             when {
-                branch 'main'
+                branch 'master'
             }
             steps {
                 script {
@@ -20,7 +20,7 @@ pipeline {
         }
         stage('Push Docker Image') {
             when {
-                branch 'main'
+                branch 'master'
             }
             steps {
                 script {
@@ -33,7 +33,7 @@ pipeline {
         }
         stage('DeployToProduction') {
             when {
-                branch 'main'
+                branch 'master'
             }
             steps {
                 milestone(1)
