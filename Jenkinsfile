@@ -45,7 +45,7 @@ pipeline {
                     //sh "ls -lat"
                     kubernetesDeploy(
                         configs: "php-deployment.yaml",
-                        kubeconfigId: "aks_kubeconfig",
+                        kubeconfigId: "aks_kubeconfig_2",
                         enableConfigSubstitution: true
                         )
                 }
