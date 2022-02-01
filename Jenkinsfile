@@ -4,7 +4,7 @@ pipeline {
     }*/
     agent any
     environment {
-        DOCKER_IMAGE_NAME = "nikip11/jenkins-ci-cd"
+        DOCKER_IMAGE_NAME = "np11dev/jenkins-ci-cd"
 
     }
     stages {
